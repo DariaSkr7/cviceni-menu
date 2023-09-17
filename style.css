@@ -16,10 +16,18 @@ body {
 .logo {
   font-weight: bold;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 ul {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+}
+
+li {
+  margin: 2px;
+  text-align: center;
+  list-style: none;
 }
 
 a {
@@ -36,6 +44,28 @@ a:hover {
 }
 
 /* ---------------------------------------------------- */
+@media (min-width:640px) {
+  ul {
+    display: flex;
+  }
+
+  li {
+    width: calc(100%/4);
+  }
+
+}
+
+@media (min-width:1000px) {
+  .hlavicka {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .logo {
+    margin: 10px;
+  }
+}
+
 
 /*
 	Nakóduj stránku podle obrázku zadani-ukolu.jpg.
